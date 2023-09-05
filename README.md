@@ -1,4 +1,4 @@
-pkg update
+pkg update <br/>
 pkg upgrade
 pkg install git
 git clone https://github.com/TripleN420/user001nina
