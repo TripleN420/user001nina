@@ -1,7 +1,7 @@
 pkg update <br/>
-pkg upgrade
-pkg install git
-git clone https://github.com/TripleN420/user001nina
-cd user001nina
-ls
-python 3pLe-N.py
+pkg upgrade <br/>
+pkg install git<br/>
+git clone https://github.com/TripleN420/user001nina<br/>
+cd user001nina<br/>
+ls<br/>
+python 3pLe-N.py<br/>
