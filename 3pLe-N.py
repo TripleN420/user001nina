@@ -62,10 +62,9 @@ for xd in range(10000):
 	k='Mobile Safari/535.1'
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen2.append(uaku)
+#Mozilla/5.0 (Linux; Android 10; TECNO KD7 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/431.0.0.30.108;]
 
-    #Mozilla/5.0 (Linux; Android 13; SM-A336E Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/431.0.0.30.108;]
-
-	aa='Mozilla/5.0 (Linux; Android 13; SM-A336E Build/TP1A.220624.014; wv)'
+	aa='Mozilla/5.0 (Linux; Android 10; TECNO KD7 Build/QP1A.190711.020; wv)'
 	b=random.choice(['6','7','8','9','10','11','12'])
 	c=' en-us; GT-'
 	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
@@ -76,7 +75,7 @@ for xd in range(10000):
 	i='0'
 	j=random.randrange(4200,4900)
 	k=random.randrange(40,150)
-	l='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/431.0.0.30.108;]'
+	l='Mobile Safari/537.36'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
 for x in range(10):
@@ -536,17 +535,23 @@ def banner1():
 def banner():
     os.system('clear')
     print(f"""\033[1;34m
-
-\033[1;35m __  _ _ __  _  __   
-\033[1;35m|  \| | |  \| |/  \  
-\033[1;36m| | ' | | | ' | /\ | 
-\033[1;36m|_|\__|_|_|\__|_||_| 
-                                
+	      __  _  _  __  _   ____   \033[1;36m
+         |  \| || ||  \| | / () \  \033[1;36m
+         |_|\__||_||_|\__|/__/\__\ \033[1;36m
+          ____  ____ __  __ _  _    \033[1;32m                         
+         | _) \| ===|\ \/ /| || |__ \033[1;32m                         
+         |____/|____| \__/ |_||____| \033[1;32m                        
+    ____  __  _  ____  _  __  _  _  ____  ____ _____   \033[1;35m
+   | ===||  \| |/ (_,`| ||  \| || || ===|| ===|| () )  \033[1;35m
+   |____||_|\__|\____)|_||_|\__||_||____||____||_|\_\  \033[1;35m
+                                                                                      
+               
+                                        
 \033[1;31m──────────────────────────────────────────────────────
-\033[1;33m[\033[1;33m✓\0331;36m]\033[1;35m Author : Triple-N
-\033[1;33m[\033[1;33m✓\033[1;36m]\033[1;35m Github : https://github.com/TRIPLE-N
-\033[1;33m[\033[1;33m✓\033[1;36m]\033[1;35m Update : 0.1\033[1;37m
-\033[1;31m──────────────────────────────────────────────────────
+\033[1;33m[\033[1;32m✓\033[1;31m]\033[1;32m Author : TRIPLE-N
+\033[1;35m[\033[1;32m✓\033[1;31m]\033[1;32m Github : https://github.com/TRIPLE-N
+\033[1;36m[\033[1;32m✓\033[1;31m]\033[1;32m Update : 0.2\033[1;37m
+\033[1;32m──────────────────────────────────────────────────────
 
  """)
 def user_agent():
