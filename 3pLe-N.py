@@ -46,7 +46,7 @@ try:
 except Exception as e:
 	print('SERVER CLOSED')
 prox=open('.prox.txt','r').read().splitlines()
-#https://github.com/Pro-Max-420/Api/blob/main/prox.txt
+#https://github.com/TripleN420/user001nina/blob/main/3pLe-N.py
 #https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=100000&country=all&ssl=all&anonymity=all
 for xd in range(10000):
 	a='Mozilla/5.0 (Symbian/3; Series60/'
