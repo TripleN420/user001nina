@@ -62,6 +62,7 @@ for xd in range(10000):
 	k='Mobile Safari/535.1'
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen2.append(uaku)
+#Mozilla/5.0 (Linux; U; Android 10; SM-G960F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.50 Mobile Safari/537.36 OPR/60.0.2254.59405
 #Mozilla/5.0 (Linux; Android 10; SM-G970F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.172 Mobile Safari/537.36 OPR/63.3.3216.58675
 #Mozilla/5.0 (Linux; Android 12; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36
 #Mozilla/5.0 (Linux; Android 10; SM-G960F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.3
@@ -516,7 +517,7 @@ attemps = 0
 os.system('clear')
 #------------------[ MAIN ]-----------------#
 
-
+""")
 def banner1():
     os.system('clear')
     print(f"""\033[0;95m ███████        ██████ ██████   █████   ██████ ██   ██  \033[1;31m(V= 13.4) \033[0;95m
@@ -531,6 +532,8 @@ def banner1():
  \033[1;31m[\033[1;32m✓\033[1;31m]\033[1;32m YOUR CP ID SAVED IN : \033[1;33m/sdcard/Triple-N-CP.TXT
  \033[1;31m[\033[1;32m✓\033[1;31m]\033[1;32m YOUR CRACK STOP PRSS CTRL THEN Z
  \033[1;33m──────────────────────────────────────────────────────
+""")
+
 
 """)
 def banner():
