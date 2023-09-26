@@ -46,7 +46,7 @@ try:
 except Exception as e:
 	print('SERVER CLOSED')
 prox=open('.prox.txt','r').read().splitlines()
-#https://github.com/TripleN420/user001nina/blob/main/3pLe-N.py
+#https://github.com/Pro-Max-420/Api/blob/main/prox.txt
 #https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=100000&country=all&ssl=all&anonymity=all
 for xd in range(10000):
 	a='Mozilla/5.0 (Symbian/3; Series60/'
@@ -62,22 +62,20 @@ for xd in range(10000):
 	k='Mobile Safari/535.1'
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen2.append(uaku)
-#Mozilla/5.0 (Linux; U; Android 10; SM-G960F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.50 Mobile Safari/537.36 OPR/60.0.2254.59405
-#Mozilla/5.0 (Linux; Android 10; SM-G970F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.172 Mobile Safari/537.36 OPR/63.3.3216.58675
-#Mozilla/5.0 (Linux; Android 12; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36
-#Mozilla/5.0 (Linux; Android 10; SM-G960F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.3
-	aa='Mozilla/5.0 (Linux; Android 10; SM-G960F)'
+#Mozilla/5.0 (Linux; Android 10; TECNO KD7 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/431.0.0.30.108;]
+
+	aa='Mozilla/5.0 (Linux; Android 10; TECNO KD7 Build/QP1A.190711.020; wv)'
 	b=random.choice(['6','7','8','9','10','11','12'])
 	c=' en-us; GT-'
 	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 	e=random.randrange(1, 999)
 	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
 	h=random.randrange(73,100)
 	i='0'
 	j=random.randrange(4200,4900)
 	k=random.randrange(40,150)
-	l='Mobile Safari/537.3'
+	l='Mobile Safari/537.36'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
 for x in range(10):
@@ -537,16 +535,18 @@ def banner1():
 def banner():
     os.system('clear')
     print(f"""\033[1;34m
-             __  _  _  __  _   ____   \033[1;36m
-            |  \| || ||  \| | / () \  \033[1;36m
-            |_|\__||_||_|\__|/__/\__\ \033[1;36m
-             ____  ____ __  __ _  _    \033[1;32m                         
-            | _) \| ===|\ \/ /| || |__ \033[1;32m                         
-            |____/|____| \__/ |_||____| \033[1;32m                        
+	      __  _  _  __  _   ____   \033[1;36m
+         |  \| || ||  \| | / () \  \033[1;36m
+         |_|\__||_||_|\__|/__/\__\ \033[1;36m
+          ____  ____ __  __ _  _    \033[1;32m                         
+         | _) \| ===|\ \/ /| || |__ \033[1;32m                         
+         |____/|____| \__/ |_||____| \033[1;32m                        
     ____  __  _  ____  _  __  _  _  ____  ____ _____   \033[1;35m
    | ===||  \| |/ (_,`| ||  \| || || ===|| ===|| () )  \033[1;35m
    |____||_|\__|\____)|_||_|\__||_||____||____||_|\_\  \033[1;35m
-                                                                                                                                            
+                                                                                      
+               
+                                        
 \033[1;31m──────────────────────────────────────────────────────
 \033[1;33m[\033[1;32m✓\033[1;31m]\033[1;32m Author : TRIPLE-N
 \033[1;35m[\033[1;32m✓\033[1;31m]\033[1;32m Github : https://github.com/TRIPLE-N
