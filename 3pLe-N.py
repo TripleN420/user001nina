@@ -62,15 +62,15 @@ for xd in range(10000):
 	k='Mobile Safari/535.1'
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen2.append(uaku)
-#Mozilla/5.0 (Linux; Android 11; Redmi K20 Pro Premium Edition Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/384.1.0.29.111;]	
+#Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-A125U1) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.0 Chrome/111.0.5563.116 Mobile Safari/537.36	
 
-	aa='Mozilla/5.0 (Linux; Android 11; Redmi K20 Pro Premium Edition Build/RKQ1.200826.002; wv)'
+	aa='Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-A125U1)'
 	b=random.choice(['6','7','8','9','10','11','12'])
 	c=' en-us; GT-'
 	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 	e=random.randrange(1, 999)
 	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	g='AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.0 Chrome/'
 	h=random.randrange(73,100)
 	i='0'
 	j=random.randrange(4200,4900)
