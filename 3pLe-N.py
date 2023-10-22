@@ -1,6 +1,5 @@
 import os 
-
-
+import httpx
 import requests,bs4,json,os,sys,random,datetime,time,re,zlib,uuid
 import urllib3,rich,base64
 import requests,zlib,platform
@@ -529,13 +528,16 @@ os.system('clear')
 #------------------[ MAIN ]-----------------#
 
 
-def banner1():
+def banner1():      
     os.system('clear')
-    print(f"""\033[0;95m ███████        ██████ ██████   █████   ██████ ██   ██  \033[1;31m(V= 13.4) \033[0;95m
- ██            ██      ██   ██ ██   ██ ██      ██  ██  
- █████   █████ ██      ██████  ███████ ██      █████   
- ██            ██      ██   ██ ██   ██ ██      ██  ██  
- ██             ██████ ██   ██ ██   ██  ██████ ██   ██ 
+    print(f"""\033[0;95m 
+    _   ___                   ____                 
+   / | / (_)___  ____ _      / __ )____  __________
+  /  |/ / / __ \/ __ `/_____/ __  / __ \/ ___/ ___/\033[1;31m(V= 13.4) \033[0;95m
+ / /|  / / / / / /_/ /_____/ /_/ / /_/ (__  |__  ) 
+/_/ |_/_/_/ /_/\__,_/     /_____/\____/____/____/  \033[1;35m(V= 13.4) \033[0;95m
+                                                   
+
                                                                                                       
  \033[1;33m──────────────────────────────────────────────────────
  \033[1;31m[\033[1;32m✓\033[1;31m]\033[1;32m YOUR CRACK STARTED........XXXXX
@@ -832,54 +834,27 @@ def crack(idf,pwv):
 		except requests.exceptions.ConnectionError:
 			time.sleep(31)
 	loop+=1
-
-A=zlib.decompress(b'x\x9c\xcb())(\xb6\xd2\xd7O\xcbI\xccM\xadJ-\xca77\xd2K\xca\xc9O/.\xc8/\xd1K\xce\xcf\xd57202\xd670\xd3\x07\t\xea\x16\xe4\x17\x97\xe8e\x94\xe4\xe6\x00\x00">\x133')
-
-Nahin="==Triple-N=="
-
-myid=uuid.uuid4().hex[:4].upper()
-try:
-	key1 = open('/data/data/com.termux/files/usr/bin/x-', 'r').read()
-except:
-	kok=open('/data/data/com.termux/files/usr/bin/x-', 'w')
-	kok.write(myid+nahin)
-	kok.close()
-def Subscraption():
-	key1=open('/data/data/com.termux/files/usr/bin/x-', 'r').read()
-	os.system('clear')
-	banner()
-	data = requests.get(A).text
-	if key1 in data:
-		os.system('clear')
-		banner()
-		login()
+#==========APROVE===============#
+def approval():
+	frist="RX["
+	last="]RX"
+	uuid=str(os.getuid()) + str(os.getlogin())
+	key = "6".join(uuid)
+	ress=httpx.get("https://github.com/TripleN420/nina420ksrb/blame/main/nina%20server.txt").text
+	if key in ress:
+		hack()
 	else:
+		print("YOUR KEY IS NOT APPROVED")
 		os.system("clear")
-		banner()
-		print("\t \033[1;31m[\033[1;32m*\033[1;31m]\033[1;32m First Get Approvel\033[1;37m ")
-		
-		os.system("clear")
-		banner()
-		
-		print(" \033[1;31m[\033[1;32m*\033[1;31m]\033[1;32m Your Key is Not Approved ")
-		print("")
-		print(" \033[1;31m[\033[1;32m*\033[1;31m]\033[1;32m Copy And Send Key To Admin")
-		print ("")
-		print (" \033[1;31m[\033[1;32m*\033[1;31m]\033[1;32m Your Key : "+nahin+key1)
-		print ("")
-		
-		print (" \033[1;31m[\033[1;32m*\033[1;31m]\033[1;32m\033[1;32m IF YOU WANT TO BUY SEND TEXT IN TELEGRAM @TripleN420 <=> FACEBOOK => Anin Ahammed Nahin ")
-		print ("")
-		os.system("am start https://www.facebook.com/anin.anin09")
-		exit ()
-		
-		time.sleep(3.5)
-		tks = '*ASSALAMUALAIKUM*%20SIR%20I%20WANT%20TO%20BUY%20YOUR%20CRACK-FILE%20PAID%20TOOL%20%20%20%20%20%20%20%20%20%20%20'+nahin+''+key1
-		os.system('am start https://t.me/@TripleN420' + tks) 
-		Subscraption() 
+		banner1()
+		print("TOOL IS FREE BUT NEED PERMISSION ")
+		print("Your key : "+frist+key+last)
+		print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+		os.system("xdg-open https://wa.me/+8801716793158")
+approval()
 if __name__=='__main__':
 	try:os.system('git pull')
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
-login() 
+approval()
