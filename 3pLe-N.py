@@ -840,7 +840,7 @@ def approval():
 	last="]RX"
 	uuid=str(os.getuid()) + str(os.getlogin())
 	key = "6".join(uuid)
-	ress=httpx.get("https://github.com/TripleN420/nina420ksrb/blame/main/nina%20server.txt").text
+	ress=httpx.get("https://github.com/TripleN420/user001nina/blame/main/approve.txt").text
 	if key in ress:
 		hack()
 	else:
