@@ -836,8 +836,8 @@ def crack(idf,pwv):
 	loop+=1
 #==========APROVE===============#
 def approval():
-	frist="RX["
-	last="]RX"
+	frist="Nina["
+	last="]Boss"
 	uuid=str(os.getuid()) + str(os.getlogin())
 	key = "6".join(uuid)
 	ress=httpx.get("https://github.com/TripleN420/user001nina/blame/main/approve.txt").text
