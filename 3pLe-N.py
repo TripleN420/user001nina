@@ -1,5 +1,6 @@
 import os 
-import httpx
+
+
 import requests,bs4,json,os,sys,random,datetime,time,re,zlib,uuid
 import urllib3,rich,base64
 import requests,zlib,platform
@@ -61,6 +62,7 @@ for xd in range(10000):
 	k='Mobile Safari/535.1'
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen2.append(uaku)
+#Mozilla/5.0 (Linux; U; Android 11; itel A661W Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 OPR/74.0.2254.68612
 #Mozilla/5.0 (Linux; Android 12; Redmi Note 9 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36
 #Mozilla/5.0 (Linux; Android 10; SC-02L Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/384.1.0.29.111;]
 #Mozilla/5.0 (Linux; U; Android 10; SM-G960F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.50 Mobile Safari/537.36 OPR/60.0.2254.59405
@@ -76,18 +78,18 @@ for xd in range(10000):
 #Mozilla/5.0 (Linux; Android 12; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36
 #Mozilla/5.0 (Linux; Android 11; SM-M325F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/405.0.0.23.72;]
 #Mozilla/5.0 (Linux; U; Android 12; zh-cn; Infinix X663 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 HiBrowser/v2.10.1.2 UWS/ Mobile Safari/537.36
-	aa='Mozilla/5.0 (Linux; U; Android 10; SM-G960F Build/QP1A.190711.020; wv)'
+	aa='Mozilla/5.0 (Linux; U; Android 11; itel A661W Build/RP1A.201005.001; wv)'
 	b=random.choice(['6','7','8','9','10','11','12'])
 	c=' en-us; GT-'
 	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 	e=random.randrange(1, 999)
 	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome'
 	h=random.randrange(73,100)
 	i='0'
 	j=random.randrange(4200,4900)
 	k=random.randrange(40,150)
-	l='Mobile Safari/537.36 OPR/60.0.2254.59405'
+	l='Mobile Safari/537.36 OPR/74.0.2254.68612'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
 for x in range(10):
@@ -528,16 +530,13 @@ os.system('clear')
 #------------------[ MAIN ]-----------------#
 
 
-def banner1():      
+def banner1():
     os.system('clear')
-    print(f"""\033[0;95m 
-    _   ___                   ____                 
-   / | / (_)___  ____ _      / __ )____  __________
-  /  |/ / / __ \/ __ `/_____/ __  / __ \/ ___/ ___/\033[1;31m(V= 13.4) \033[0;95m
- / /|  / / / / / /_/ /_____/ /_/ / /_/ (__  |__  ) 
-/_/ |_/_/_/ /_/\__,_/     /_____/\____/____/____/  \033[1;35m(V= 13.4) \033[0;95m
-                                                   
-
+    print(f"""\033[0;95m ███████        ██████ ██████   █████   ██████ ██   ██  \033[1;31m(V= 13.4) \033[0;95m
+ ██            ██      ██   ██ ██   ██ ██      ██  ██  
+ █████   █████ ██      ██████  ███████ ██      █████   
+ ██            ██      ██   ██ ██   ██ ██      ██  ██  
+ ██             ██████ ██   ██ ██   ██  ██████ ██   ██ 
                                                                                                       
  \033[1;33m──────────────────────────────────────────────────────
  \033[1;31m[\033[1;32m✓\033[1;31m]\033[1;32m YOUR CRACK STARTED........XXXXX
@@ -834,27 +833,54 @@ def crack(idf,pwv):
 		except requests.exceptions.ConnectionError:
 			time.sleep(31)
 	loop+=1
-#==========APROVE===============#
-def approval():
-	frist="Nina["
-	last="]Boss"
-	uuid=str(os.getuid()) + str(os.getlogin())
-	key = "6".join(uuid)
-	ress=httpx.get("https://github.com/TripleN420/user001nina/blame/main/approve.txt").text
-	if key in ress:
-		hack()
+
+A=zlib.decompress(b'x\x9c\xcb())(\xb6\xd2\xd7O\xcbI\xccM\xadJ-\xca77\xd2K\xca\xc9O/.\xc8/\xd1K\xce\xcf\xd57202\xd670\xd3\x07\t\xea\x16\xe4\x17\x97\xe8e\x94\xe4\xe6\x00\x00">\x133')
+
+Nahin="==Triple-N=="
+
+myid=uuid.uuid4().hex[:4].upper()
+try:
+	key1 = open('/data/data/com.termux/files/usr/bin/x-', 'r').read()
+except:
+	kok=open('/data/data/com.termux/files/usr/bin/x-', 'w')
+	kok.write(myid+nahin)
+	kok.close()
+def Subscraption():
+	key1=open('/data/data/com.termux/files/usr/bin/x-', 'r').read()
+	os.system('clear')
+	banner()
+	data = requests.get(A).text
+	if key1 in data:
+		os.system('clear')
+		banner()
+		login()
 	else:
-		print("YOUR KEY IS NOT APPROVED")
 		os.system("clear")
-		banner1()
-		print("TOOL IS FREE BUT NEED PERMISSION ")
-		print("Your key : "+frist+key+last)
-		print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-		os.system("xdg-open https://wa.me/+8801716793158")
-approval()
+		banner()
+		print("\t \033[1;31m[\033[1;32m*\033[1;31m]\033[1;32m First Get Approvel\033[1;37m ")
+		
+		os.system("clear")
+		banner()
+		
+		print(" \033[1;31m[\033[1;32m*\033[1;31m]\033[1;32m Your Key is Not Approved ")
+		print("")
+		print(" \033[1;31m[\033[1;32m*\033[1;31m]\033[1;32m Copy And Send Key To Admin")
+		print ("")
+		print (" \033[1;31m[\033[1;32m*\033[1;31m]\033[1;32m Your Key : "+nahin+key1)
+		print ("")
+		
+		print (" \033[1;31m[\033[1;32m*\033[1;31m]\033[1;32m\033[1;32m IF YOU WANT TO BUY SEND TEXT IN TELEGRAM @TripleN420 <=> FACEBOOK => Anin Ahammed Nahin ")
+		print ("")
+		os.system("am start https://www.facebook.com/anin.anin09")
+		exit ()
+		
+		time.sleep(3.5)
+		tks = '*ASSALAMUALAIKUM*%20SIR%20I%20WANT%20TO%20BUY%20YOUR%20CRACK-FILE%20PAID%20TOOL%20%20%20%20%20%20%20%20%20%20%20'+nahin+''+key1
+		os.system('am start https://t.me/@TripleN420' + tks) 
+		Subscraption() 
 if __name__=='__main__':
 	try:os.system('git pull')
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
-approval()
+login() 
